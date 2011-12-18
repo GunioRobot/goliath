@@ -141,11 +141,11 @@ Berry\r
         ret = @params.retrieve_params(@env)
         ret['foo'].should == 'bar'
       end
-      
+
       it "handles empty input gracefully on JSON" do
         @env['CONTENT_TYPE'] = 'application/json'
         @env['rack.input'] = StringIO.new
-        
+
         ret = @params.retrieve_params(@env)
         ret.should be_empty
       end

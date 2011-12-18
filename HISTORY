@@ -4,25 +4,25 @@ HISTORY
 v0.9.1 (Apr 12, 2011)
 ---------------------
   - Added extra messaging around the class not matching the file name (Carlos Brando)
-  
+
   - Fix issue with POST parameters not being parsed by Goliath::Rack::Params
   - Added support for multipart encoded POST bodies
   - Added support for parsing nested query string parameters (Nolan Evans)
   - Added support for parsing application/json POST bodies
   - Content-Types outside of multipart, urlencoded and application/json will not be parsed automatically.
-  
+
   - added 'run as user' option
   - SERVER_NAME and SERVER_PORT are set to values in HOST header
-  
+
   - Cleaned up spec examples (Justin Ko)
-  
+
   - moved logger into 'rack.logger' key to be more Rack compliant (Env#logger added to
     keep original API consistent)
   - add command line option for specifying config file
   - HTTP_CONTENT_LENGTH and HTTP_CONTENT_TYPE were changed to CONTENT_TYPE and CONTENT_LENGTH
     to be more Rack compliant
   - fix issue with loading config file in development mode
-  
+
   - Rack::Reloader will be loaded automatically by the framework in development mode.
 
 
